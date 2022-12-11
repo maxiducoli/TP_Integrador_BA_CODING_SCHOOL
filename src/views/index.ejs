@@ -1,3 +1,47 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<%- include ('partials/headMain') %> 
+<body>
+<%-  include('partials/headerMain') %> 
+    <main class="main">
+      
+
+<% products.forEach(product => { %>
+
+  <section class="bg-light py-4 my-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="mb-3 text-primary">Galería de productos</h2>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="card my-3">
+
+                    <img src="<%= product.image %>" class="card-image-top" alt="thumbnail">
+
+                    <div class="card-body">
+                        <h3 class="card-title"><a href="/products/product/:<%= product.id %>" class="text-secondary"><%= product.name %></a></h3>
+                        <p class="card-text"><%= product.description %> </p>
+                        <a href="/products/product/:<%= product.id %>" class="btn btn-primary">Ver</a>
+                    </div>
+                </div>
+            </div>
+
+           
+        </div>
+    </div>
+</section>
+
+<% }) %>
+
+
+    </main>
+<!-- FOOTER-->
+<%- include('partials/footerMain') %> 
+</body>
+=======
 <!DOCTYPE html>
 <html lang="en">
 <%- include ('partials/headMain') %> 
@@ -40,4 +84,5 @@
 <!-- FOOTER-->
 <%- include('partials/footerMain') %> 
 </body>
+>>>>>>> 9a9591cb69ee0830b3ae3b684ee78c0ed054f866
 </html>

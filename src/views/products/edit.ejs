@@ -1,3 +1,51 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %> 
+<%- include('../partials/header') %> 
+    <body>
+
+        <div class="FormContainer">
+          <form>
+            <div class="formrow">
+              <div class="ProductName">
+                <label for="Name">Nombre del producto</label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="<%= product.name %>" required>
+              </div>
+              <div class="ProductBrand">
+                <label for="validationDefault02">Marca del producto</label>
+                <input type="text" class="form-control" id="validationDefault02" placeholder="<%= product.brand %>" required>
+              </div>
+              <div class="ProductPrice">
+                <label for="validationDefault03">Precio</label>
+                <input type="text" class="form-control" id="validationDefault03" placeholder="<%= product.price %>" required>
+              </div> 
+            </div>
+            <div class="formrow">
+              <div class="ProductImage">
+                <label for="Image">Imagen</label>
+                <img src="<%= product.image %>" alt="<%= product.name %>">
+                <button class="btn btn-primary" type="submit">Load Image</button>
+              </div>
+              <div class="ProductDescription">
+                <label for="validationDefault04">Descripción</label>
+                <textarea class="form-control" id="validationDefault04" placeholder="<%= product.description %>" required></textarea>
+              </div>
+    
+            </div>
+           <br>
+           <div class="btnContainer">
+            <button class="btn btn-primary" id="imgBtn" type="submit">Guardar cambios</button>
+        <button class="btn btn-primary" id="imgBtn" type="submit">Limpiar todo</button>
+        <a href="/" class="btn btn-primary" id="imgBtn" type="submit">Volver al iniciio</a>
+          </div>
+          </form>
+    </div>
+
+    <!-- FOOTER-->
+<%- include('../partials/footerMain') %> 
+</body>
+=======
 <!DOCTYPE html>
 <html lang="en">
     <%- include('../partials/head') %> 
@@ -39,4 +87,5 @@
     <!-- FOOTER-->
 <%- include('../partials/footerMain') %> 
 </body>
+>>>>>>> 9a9591cb69ee0830b3ae3b684ee78c0ed054f866
 </html>
