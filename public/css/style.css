@@ -70,3 +70,22 @@ width : 100%;
     /*border: solid blue 3px;*/
     width: 100%;
 }
+.links{
+    display: flex;
+    flex-direction: row;
+}
+
+/* LISTA DE PRODUCTOS */
+.ProductsContainer{
+    display: flex;
+    flex-direction: row;
+}
+.ccContainer{
+    display: flex;
+    flex-direction: row;
+}
+.FomrContainer{
+    display: flex;
+   
+    flex-wrap: wrap;
+}

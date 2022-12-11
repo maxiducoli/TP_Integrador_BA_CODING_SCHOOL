@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head') %> 
+<%- include('../partials/header') %> 
+    <body>
+
+        <div class="FormContainer">
+    <form>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault01"><%= productos.name %></label>
+            <input type="text" class="form-control" id="validationDefault01" placeholder="Name" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="validationDefault02"><%= productos.brand %></label>
+            <input type="text" class="form-control" id="validationDefault02" placeholder="Brand" required>
+          </div>
+          
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationDefault03"><%= productos.price %></label>
+            <input type="text" class="form-control" id="validationDefault03" placeholder="Price" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault04"><%= productos.description %></label>
+            <input type="text" class="form-control" id="validationDefault04" placeholder="Description" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationDefault05">Load Image</label>
+            <button class="btn btn-primary" type="submit">Load Image</button>
+          </div>
+        </div>
+       
+        <button class="btn btn-primary" type="submit">Guardar cambios</button>
+      </form>
+    </div>
+
+    <!-- FOOTER-->
+<%- include('../partials/footerMain') %> 
+</body>
+</html>
